@@ -1,13 +1,20 @@
-# lab1_solution.py 
-
 import pandas as pd
+import os
 
 def main():
-    # Load the traffic dataset
+    """Load the traffic dataset using an absolute path and analyze vehicle counts."""
     try:
-        df = pd.read_csv('../../datasets/traffic_data.csv')
+        # Get the absolute path of the current script
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+
+        # Construct the absolute path to the dataset
+        dataset_path = os.path.join(script_dir, "..", "..", "datasets", "traffic_data.csv")
+
+        # Load dataset
+        df = pd.read_csv(dataset_path)
     except FileNotFoundError:
-        print("Error: The dataset file was not found. Please ensure 'traffic_data.csv' is located in the /datasets/ folder.")
+        print(f"Error: The dataset file was not found. Please ensure 'traffic_data.csv' is located in the '/datasets/' folder.")
+        print(f"Expected path: {dataset_path}")
         return
 
     # Compute basic descriptive statistics for 'vehicle_count'

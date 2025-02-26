@@ -1,12 +1,19 @@
 import pandas as pd
+import os
 
 def load_data():
-    """Load dataset using the given relative path."""
+    """Load dataset using an absolute path."""
     try:
-        data = pd.read_csv("../../datasets/soil_test.csv")  # Using the exact file path you provided
+        # Get the absolute path of the current script
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+
+        # Construct the absolute path to the dataset
+        dataset_path = os.path.join(script_dir, "..", "..", "datasets", "soil_test.csv")
+
+        data = pd.read_csv(dataset_path)
         return data
     except FileNotFoundError:
-        print("Error: File not found. Make sure 'soil_test.csv' is in the '../../datasets/' folder.")
+        print(f"Error: File not found at {dataset_path}")
         return None
 
 def clean_data(file, column):

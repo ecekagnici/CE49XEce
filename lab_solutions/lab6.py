@@ -22,7 +22,7 @@ def load_construction_data(file_path):
 # Load dataset
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
-        # Construct the absolute path to the dataset
+# Construct the absolute path to the dataset
 dataset_path = os.path.abspath(
     os.path.join(script_dir, os.pardir, "datasets", "construction_documents.json")
 )

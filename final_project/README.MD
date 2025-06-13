@@ -20,8 +20,7 @@ This comprehensive Life Cycle Assessment (LCA) tool is designed to analyze and v
 
 1. **Clone the repository:**
 ```bash
-git clone <repository-url>
-cd lca-analysis-tool
+git clone https://github.com/ecekagnici/CE49XEce/edit/main/final_project
 ```
 
 2. **Install dependencies:**
@@ -89,11 +88,6 @@ python src/main.py [OPTIONS]
 **Basic analysis:**
 ```bash
 python src/main.py -d data/raw/sample_data.csv -f data/raw/impact_factors.json
-```
-
-**Custom output directory:**
-```bash
-python src/main.py --data data/raw/products.xlsx --factors data/raw/impacts.json --output quarterly_analysis
 ```
 
 **Full command with all options:**
@@ -181,11 +175,6 @@ python -m pytest tests/test_calculations.py -v
 
 # Test visualization generation
 python -m pytest tests/test_visualization.py -v
-```
-
-**Run tests with coverage report:**
-```bash
-python -m pytest --cov=src
 ```
 
 ### Test Categories:

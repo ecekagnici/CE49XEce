@@ -20,7 +20,7 @@ This comprehensive Life Cycle Assessment (LCA) tool is designed to analyze and v
 
 1. **Clone the repository:**
 ```bash
-git clone https://github.com/ecekagnici/CE49XEce/edit/main/final_project
+git clone https://github.com/ecekagnici/CE49XEce/tree/main/final_project
 ```
 
 2. **Install dependencies:**

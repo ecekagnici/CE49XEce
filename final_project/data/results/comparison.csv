@@ -1,0 +1,3 @@
+product_id,product_name,carbon_impact,energy_impact,water_impact,waste_generated_kg,carbon_impact_relative,energy_impact_relative,water_impact_relative
+P001,Reinforced Concrete,425.00000000000006,4500.0,150000.0,2625.0,1.0,1.0,1.0
+P002,Structural Steel Beam,1150.0,12500.0,90000.0,525.0,2.705882352941176,2.7777777777777777,0.6
